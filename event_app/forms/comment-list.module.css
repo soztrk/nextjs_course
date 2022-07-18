@@ -1,0 +1,42 @@
+.comments {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.comments li {
+  text-align: left;
+  padding: 0.5rem 0;
+  border-bottom: 2px solid #ccc;
+}
+
+.comments p {
+  margin: 0;
+}
+
+.comments li div {
+  text-align: right;
+  font-style: italic;
+}
+
+.comments address {
+  display: inline;
+}
+
+.loading {
+  display: inline-block;
+  color: #814081;
+  font-size: 1.3rem;
+  border-radius: 8px;
+  padding: 20px;
+  animation: blink 0.5s linear 0.1s infinite alternate;
+}
+
+@keyframes blink{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
