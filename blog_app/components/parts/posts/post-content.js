@@ -1,5 +1,7 @@
 import ReactMarkdown from "react-markdown"
 import Image from "next/image"
+import {Prism as SyntaxHighlighter} from "react-syntax-highlighter"
+import {a11yDark} from "react-syntax-highlighter/dist/cjs/styles/prism"
 
 import classes from "./post-content.module.css"
 import PostHeader from "./post-header"
@@ -36,6 +38,12 @@ export default function PostContent(props){
             }
       
             return <p>{paragraph.children}</p>;
+          },
+          code(code){
+
+            const {className,children} = code
+
+            return <SyntaxHighlighter style={a11yDark} language={className} children={children} />
           }
     }
 
