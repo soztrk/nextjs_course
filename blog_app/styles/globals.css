@@ -62,3 +62,19 @@ button {
   font: inherit;
   cursor: pointer;
 }
+
+.btn.btn-link{
+  background-color: var(--color-grey-100);
+  border:0;
+  padding: 10px 20px;
+  font-size: var(--size-5);
+  transition: background-color 0.2s ease;
+}
+
+.btn.btn-link:hover{
+  background-color: var(--color-grey-200);
+}
+
+.center{
+  text-align: center;
+}
